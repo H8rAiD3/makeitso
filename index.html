@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make It So — Power. Internet. Education.</title>
+<meta name="description" content="Make It So is a non-profit that brings solar power, Starlink internet, and streaming education to communities that have none. Free. No strings.">
+<style>
+  :root {
+    --bg: #0b0f14;
+    --panel: #121820;
+    --text: #e8edf2;
+    --muted: #8b97a3;
+    --accent: #3ddc97;
+    --accent-2: #4aa3ff;
+    --border: #1e2832;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: rgba(11,15,20,0.92);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+  }
+  .logo { font-weight: 700; font-size: 1.15rem; letter-spacing: 0.02em; }
+  .logo span { color: var(--accent); }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+  nav a:hover { color: var(--text); }
+  .hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero p.lead {
+    font-size: 1.2rem;
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 auto 2.5rem;
+  }
+  .cta {
+    display: inline-block;
+    background: var(--accent);
+    color: #06251a;
+    font-weight: 700;
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.05rem;
+  }
+  .cta:hover { filter: brightness(1.08); }
+  .loop {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+  }
+  .card .num {
+    color: var(--accent-2);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .card h3 { margin-bottom: 0.75rem; font-size: 1.25rem; }
+  .card p { color: var(--muted); font-size: 0.98rem; }
+  .free-banner {
+    background: linear-gradient(90deg, #0e2a1f, #0b0f14);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+    padding: 2.5rem 2rem;
+  }
+  .free-banner h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+  .free-banner p { color: var(--muted); max-width: 600px; margin: 0 auto; }
+  section.about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+  section.about h2 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+  .bio { color: var(--muted); margin-bottom: 1rem; }
+  .bio strong { color: var(--text); }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  @media (max-width: 640px) {
+    header { padding: 1rem; }
+    nav a { margin-left: 1rem; font-size: 0.85rem; }
+    .hero { padding: 3.5rem 1.25rem 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Make It <span>So</span></div>
+  <nav>
+    <a href="#mission">Mission</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="mission">
+  <h1>Power. Internet.<br><em>Education.</em></h1>
+  <p class="lead">Make It So is a non-profit that brings solar power, Starlink internet, and streaming education to communities that have none of the three. Free. No strings attached.</p>
+  <a class="cta" href="#contact">Get Involved</a>
+</section>
+
+<div class="loop">
+  <div class="card">
+    <div class="num">Step 01</div>
+    <h3>Solar</h3>
+    <p>We set up solar power terminals so communities can generate their own electricity — no grid, no fuel runs, no waiting on anyone.</p>
+  </div>
+  <div class="card">
+    <div class="num">Step 02</div>
+    <h3>Starlink</h3>
+    <p>With power in place, we install Starlink satellite internet. A solar-powered terminal can be up and running in a few hours.</p>
+  </div>
+  <div class="card">
+    <div class="num">Step 03</div>
+    <h3>Education</h3>
+    <p>Once a community is online, we stream education — including homeschooling my own son — so kids learn more than they ever could before.</p>
+  </div>
+</div>
+
+<div class="free-banner">
+  <h2>It's all free.</h2>
+  <p>This is a non-profit. Nobody here is getting paid. If you can put me on a chopper and send me somewhere to set up a solar terminal and a Starlink dish, I'll spend a day or two putting it together — and then you have internet. Bye.</p>
+</div>
+
+<section class="about" id="about">
+  <h2>About</h2>
+  <p class="bio"><strong>Ford Moore Jr.</strong> is a U.S. Air Force combat veteran of Operations Enduring Freedom and Iraqi Freedom, where he served four years as a Satcom and Ground Radio seven-level craftsman.</p>
+  <p class="bio">He then spent over ten years at the Bonneville Power Administration as a Power Systems Control Craftsman Two in the McNary District, maintaining the power grid of the Pacific Northwest. He medically retired in December 2024.</p>
+  <p class="bio">He now lives off-grid with his family, homeschools his son, and is building Make It So to bring the same self-reliance he built for himself to people who have neither power nor internet.</p>
+</section>
+
+<footer id="contact">
+  <p>Make It So — a non-profit. <a href="mailto:ford.moore.jr@gmail.com" style="color:var(--accent)">ford.moore.jr@gmail.com</a></p>
+  <p style="margin-top:0.5rem">&copy; 2026 Make It So. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
